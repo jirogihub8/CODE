@@ -1,0 +1,7 @@
+f=open("HATTHOC.INP")
+f1=open("HATTHOC.OUT","w")
+n,q=map(int,f.readline().split())
+S=(1-q**n)//(1-q)
+f1.write(str(S))
+f.close()
+f1.close()

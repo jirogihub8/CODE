@@ -1,0 +1,7 @@
+f=open("DEMSO.INP")
+f1=open("DEMSO.OUT","w")
+a,b,c=map(int,f.readline().split())
+S=(b-a+1)-(b//c-(a-1)//c)
+f1.write(str(S))
+f.close()
+f1.close()
