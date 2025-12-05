@@ -20,6 +20,7 @@ for i in a:
     for j in lt2:
         need=j-i
         if need in past_on and need >0:
+            '''nếu need đã tồn tại'''
             for g in range(past_on[need]):
                 l.append((i,need))
                 '''l chứa cập đủ điều kiện (i,need)'''
@@ -49,3 +50,4 @@ f1.close()
 
 
     
+
