@@ -2,7 +2,7 @@ f=open("SAND.INP")
 f1=open("SAND.OUT","w")
 n=int(f.readline())
 a=list(map(int,f.readline().split()))
-
+'''chưa chắc bài đã cho đủ 1 2 3 4 dict phải tự gán'''
 d={4:0,3:0,2:0,1:0}
 for i in a:
     d[i]+=1
@@ -25,4 +25,5 @@ if d[1]%4!=0:
 
 f1.write(str(dem))
 f.close()
+
 f1.close()
