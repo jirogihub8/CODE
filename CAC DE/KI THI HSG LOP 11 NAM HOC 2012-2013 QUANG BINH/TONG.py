@@ -1,0 +1,12 @@
+f=open("TONG.INP")
+f1=open("TONG.OUT","w")
+M=int(f.readline())
+p=''.join(list(map(str,f.readline().split())))
+N=int(f.readline())
+q=''.join(list(map(str,f.readline().split())))
+x=int(p)+int(q)
+f1.write(str(len(str(x)))+'\n')
+for i in str(x):
+    f1.write(str(i)+' ')
+f.close()
+f1.close()
